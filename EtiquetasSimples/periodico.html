@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Corrales Diario</title>
+    <link rel="stylesheet" href="/css/periodico.css">
     <style>
+    body {
+        background-color: rgb(142, 7, 7);
+    }
     .publi {
         top: 0px;
         left: 0px;
-        width: 1500px;
+        width: 1550px;
         position: fixed;
         display: flex;
         justify-content: center;
@@ -19,7 +23,7 @@
     .uno {
         width: 400px;
         height: 350px;
-        background-color: rgb(116, 116, 206);
+        background-color: rgb(206, 116, 116);
         color: black;
         padding: 20px;
         position: absolute;
@@ -27,8 +31,8 @@
     }
     .dos {
         width: 400px;
-        height: 580px;
-        background-color: rgb(116, 116, 206);
+        height: 620px;
+        background-color: rgb(206, 116, 116);
         color: black;
         padding: 20px;
         position: absolute;
@@ -36,8 +40,8 @@
     }
     .tres{
         width: 700px;
-        height: 750px;
-        background-color: rgb(116, 116, 206);
+        height: 780px;
+        background-color: rgb(206, 116, 116);
         color: black;
         padding: 20px;
         position: absolute;
@@ -46,6 +50,40 @@
     }
     .rtnd {
         width: 700px;
+    }
+    #impt {
+        font-size: 40px;
+    }
+    .cuatro {
+        width: 1010px;
+        height: 190px;
+        background-color: rgb(206, 116, 116);
+        color: black;
+        padding: 20px;
+        position: absolute;
+        top: 940px;
+        left: 460px;
+    }
+    .cinco {
+        width: 260px;
+        height: 420px;
+        background-color: rgb(206, 116, 116);
+        color: black;
+        padding: 20px;
+        position: absolute;
+        top: 110px;
+        left: 1210px;
+    }
+    .seis {
+        width: 260px;
+        height: 310px;
+        background-color: rgb(206, 116, 116);
+        color: black;
+        padding: 20px;
+        position: absolute;
+        top: 580px;
+        left: 1210px;
+        text-align: center;  
     }
     </style>
 </head>
@@ -59,14 +97,26 @@
     </div>
     <div class="dos">
         <h1>Redada de la policía nacional en la calle Antonio Gala</h1>
-        <p>Mauris augue neque gravida in fermentum et sollicitudin ac. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Netus et malesuada fames ac turpis egestas maecenas. Amet purus gravida quis blandit turpis cursus in. Sit amet est placerat in. Mi quis hendrerit dolor magna eget est lorem. Mauris augue neque gravida in fermentum. Nunc sed blandit libero volutpat sed cras ornare arcu. Aliquet nec ullamcorper sit amet risus nullam eget. Ut sem viverra aliquet eget sit amet tellus cras. Nec ultrices dui sapien eget mi proin sed. Neque volutpat ac tincidunt vitae semper.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris augue neque gravida in fermentum et sollicitudin ac. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Netus et malesuada fames ac turpis egestas maecenas. Amet purus gravida quis blandit turpis cursus in. Sit amet est placerat in. Mi quis hendrerit dolor magna eget est lorem. Mauris augue neque gravida in fermentum. Nunc sed blandit libero volutpat sed cras ornare arcu. Aliquet nec ullamcorper sit amet risus nullam eget. Ut sem viverra aliquet eget sit amet tellus cras. Nec ultrices dui sapien eget mi proin sed. Neque volutpat ac tincidunt vitae semper.</p>
+        <p>Mauris augue neque gravida in fermentum et sollicitudin ac. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Netus et malesuada fames ac turpis egestas maecenas. Amet purus gravida quis blandit turpis cursus in. Sit amet est placerat in. Mi quis hendrerit dolor magna eget est lorem. Mauris augue neque gravida in fermentum. Nunc sed blandit libero volutpat sed cras ornare arcu. Aliquet nec ullamcorper sit amet risus nullam eget. Ut sem viverra aliquet eget sit amet tellus cras. Nec ultrices dui sapien eget mi proin sed. Neque volutpat ac tincidunt vitae semper.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris augue neque gravida in fermentum et sollicitudin ac. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Netus et malesuada fames ac turpis egestas maecenas. Amet purus gravida quis blandit turpis cursus in. Sit amet est placerat in. Mi quis hendrerit dolor magna eget est lorem. Mauris augue neque gravida in fermentum. Nunc sed blandit libero volutpat sed cras ornare arcu. Aliquet nec ullamcorper sit amet risus nullam eget. Ut sem viverra aliquet eget sit amet tellus cras. Nec ultrices dui sapien eget mi proin sed. Neque volutpat ac tincidunt vitae semper. Nec ultrices dui sapien eget mi proin sed. Neque volutpat ac tincidunt vitae semper.</p>
     </div>
     <div class="tres">
-        <h1>Se inaugura la nueva rotonda de la Avenida Andalucía</h1>
+        <h1 id="impt">Se inaugura la nueva rotonda de la Avenida Andalucía</h1>
         <p>Cras pulvinar mattis nunc sed blandit libero volutpat sed. Vitae tortor condimentum lacinia quis vel eros donec ac. Fermentum posuere urna nec tincidunt praesent. Ultrices neque ornare aenean euismod elementum nisi quis. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Elementum pulvinar etiam non quam lacus suspendisse faucibus. Aliquam ut porttitor leo a diam. Volutpat consequat mauris nunc congue nisi. Accumsan tortor posuere ac ut consequat semper viverra nam libero. Gravida cum sociis natoque penatibus et magnis dis parturient. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Turpis egestas sed tempus urna et pharetra pharetra massa massa. Duis ultricies lacus sed turpis. Vestibulum sed arcu non odio euismod. Malesuada bibendum arcu vitae elementum curabitur.</p>
         <div>
-            <img src="images/fuente-en-la-rotonda-.webp" alt="" class="rtnd">
+            <img src="images/fuente-en-la-rotonda-.webp" alt="fuente-en-la-rotonda" class="rtnd">
         </div>   
+    </div>
+    <div class="cuatro">
+        <h1>La gripe aviar llega a Los Corrales</h1>
+        <p>Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Elit at imperdiet dui accumsan sit amet. Suspendisse sed nisi lacus sed viverra tellus in. Massa vitae tortor condimentum lacinia quis. Sagittis vitae et leo duis ut. Purus non enim praesent elementum facilisis leo vel fringilla. Id donec ultrices tincidunt arcu non sodales neque sodales. Diam quam nulla porttitor massa id neque aliquam. Nullam vehicula ipsum a arcu. Arcu vitae elementum curabitur vitae nunc sed velit. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Aliquam ultrices sagittis orci a scelerisque purus semper. Diam vel quam elementum pulvinar. Sed vulputate odio ut enim blandit. Sed libero enim sed faucibus turpis in eu. Nibh tortor id aliquet lectus proin.</p>
+    </div>
+    <div class="cinco">
+        <h1>Apertura de nuevo bar para la juventud en Plaza Diamantino García</h1>
+        <p>Malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Non arcu risus quis varius. Ac turpis egestas maecenas pharetra convallis posuere morbi leo. Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Fusce id velit ut tortor pretium viverra suspendisse.</p>
+    </div>
+    <div class="seis">
+        <h1>¡Tu juego diario!</h1>
+        <img src="images/sudoku.png" alt="sudoku">
     </div>
 </body>
 </html>
