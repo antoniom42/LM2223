@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Media Queries 2</title>
+    <style>
+        .marco {overflow: auto;}
+        .botone {
+            background-color: rgb(255, 255, 255);
+            float: none;
+            width: auto;
+        }
+        .jojo {
+            background-color: rgb(28, 192, 80);
+            list-style-type: none;
+            margin: 4px;
+            border-color: black;
+            border-radius: 6px;
+            padding: 6px;
+        }
+        .cuer {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .titu {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        @media screen and (min-width: 480px) {
+           .botone {width: 200px; float: right;}
+           .cuer {margin-left: 216px;}
+        }
+    </style>
+</head>
+<body>
+<div class="marco">    
+    <div class="botone">
+        <ul>
+            <li class="jojo">Opcion 1</li>
+            <li class="jojo">Opcion 2</li>
+            <li class="jojo">Opcion 3</li>
+        </ul>
+    </div>
+    <div class="cuer">
+    <h1 class="titu">TÍTULO DE PRUEBA ;)</h1>
+    <p>Este texto es simplemente para probar que esta página web funciona. Anda que no es trabajoso el media queries de los huevos. A mi me gustaba hacer tablas y cuadritos no tanto revoleo. Me voy a pegar un tiro que seguro que es más sencillo y acabo antes. Más me vale salir del ciclo este cobrando una pasta.</p>
+    </div>
+</div>
+</body>
+</html>

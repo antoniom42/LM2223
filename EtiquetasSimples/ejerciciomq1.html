@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercico Media Queries 1</title>
+    <style>
+div {
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    body{
+    background-color: lightblue;    
+    }
+    #movil {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 786px){
+    body{
+    background-color: rgb(173, 230, 187);    
+    }
+    #tablet {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px){
+    body{
+    background-color: lightcoral;    
+    }
+    #portatil {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1280px){
+    body{
+    background-color: lightseagreen;    
+    }
+    #escritorio {
+    display: block;
+  }
+}
+
+@media print{
+  #impr {
+    font-family: 'Times New Roman', Times, serif;
+  }
+}
+    </style>
+</head>
+<body>
+    <div id="movil"> Soy un móvil (0-480px)</div>
+    <div id="tablet"> Soy una tablet medianita (481-786px)</div>
+    <div id="portatil"> Soy un portátil o una tablet modernita (769-1279px)</div>
+    <div id="escritorio"> Soy un monitor (>1280px)</div>
+    <div id="impr"> Soy una versión para imprimir, ¡Fíjate en mi fuente!</div>
+</body>
+</html>
