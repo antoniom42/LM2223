@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Navidad!</title>
+    <style>
+        body {
+            background-color: red;
+            margin: 5px;
+            font-size: 30px;
+            color: green;
+            text-align: center;
+        }
+        .cuerpo{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .uno{
+            flex: 50%;
+            width: 45%;
+        }
+        .dos{
+            flex: 50%;
+            width: 50%;
+        }
+        img {
+            width: 98%;
+            padding: 3px;
+        }
+        @media (max-width: 480px) {
+            .uno {
+                flex: 100%;
+                max-width: 100%;
+            }
+            .dos {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+        footer{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡¡FELIZ NAVIDAD!!</h1>
+    </header>
+    <div class="cuerpo">
+        <div class="uno">
+            <img src="https://img.freepik.com/vector-gratis/tarjeta-navidad-vertical-realista-fondo-madera_1361-1814.jpg?w=740&t=st=1671443907~exp=1671444507~hmac=50ceb862b61147b7a721f147b346c269801ecd9645fc5b60e73175798402ae86" alt="navidad">
+        </div>
+        <div class="dos">
+            <img src="https://thumbs.dreamstime.com/b/coca-cola-de-la-navidad-78081731.jpg" alt="navidadcocacola">
+        </div>
+    </div>
+    <footer>
+        <h1>TE DESEO UNAS FELICES FIESTAS RODEADO DE TUS SERES QUERIDOS. Y RECUERDA, SI BEBES, NO CONDUZCAS.</h1>
+    </footer>
+</body>
+</html>
