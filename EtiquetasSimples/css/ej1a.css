@@ -1,0 +1,13 @@
+.tit {
+    text-align: center;
+    size: 200%;
+    color: blue;
+}
+.par {
+    color: yellow;
+    text-align: left;
+    margin-left: 20px;
+}
+body {
+    background: url(https://static.videezy.com/system/resources/thumbnails/000/042/150/original/17.jpg) no-repeat top fixed;
+}

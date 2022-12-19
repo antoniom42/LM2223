@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style2o.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
+</head>
+<body>
+    <header class="tit">
+        <h1>Crea tu personaje</h1>
+    </header>
+    <div class="cuerpo">
+        Por favor, rellena este formulario.
+
+        <form action="/action_page.php" method="post">
+        <div class="uno">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe el nombre de tu personaje...">
+        </div>    
+        <div class="dos">
+            <label for="poder"> ¿Tienes poderes?</label>
+            <input type="checkbox" name="poder" value="poder">
+        </div>
+        <div class="tres">
+            <label for="color">Color favorito</label>
+            <input type="color" name="color" value="color">
+        </div>
+        <div class="cuatro">
+            <label for="descrip">Descripción del mismo</label>
+            <input type="text" id="descrip" name="descrip">
+        </div>
+        <div class="cinco">
+            <label for="email">Email de su tribu</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="seis">
+            <label for="fecha">Nacimiento</label>
+            <input type="date" id="fecha" name="fecha">
+        </div>
+        <div class="siete">
+            <select name="bando">
+                <option value="buenos" id="buenos">Buenos</option>
+                <option value="malvados" id="malvados">Malvados</option>
+        </div>
+        <div class="ocho">
+            <label for="hist"> Historia del personaje</label>
+            <textarea name="hist" id="hist" cols="30" rows="10" placeholder="Puntos débiles..."></textarea>
+        </div>
+        <div class="nueve">
+            <label for="image"> Imagen</label>
+            <input type="file">
+        </div>
+        </form>
+          
+    </div>
+
+</body>
+</html>

@@ -14,7 +14,6 @@ body{
     padding: 20px;
     border: 2px dashed black;
     background-color: lightgray;
-    justify-content: stretch;
     grid-template-rows: 10% 20% auto 10%;
     grid-template-areas:
     'uno uno'
