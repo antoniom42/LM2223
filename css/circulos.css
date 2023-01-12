@@ -1,0 +1,24 @@
+#rojo {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50px;
+    line-height: 100px;
+    text-align: center;
+}
+#verde {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50px;
+    line-height: 100px;
+    text-align: center;
+}
+#azul {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 50px;
+    line-height: 100px;
+    text-align: center;
+}
