@@ -1,0 +1,25 @@
+
+body {
+    background-color: lightgray;
+    font-family: 'Open Sans Condensed';
+}
+.tit {
+    width: 70%;
+    margin: 0 auto; 
+}
+.cuerpo {
+    border: 1px solid #000000;
+    width: 80%;
+    height: 84vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: white;
+    font-size: 24px;
+}
+div > label {
+    grid-column: 1/ 2;
+}
+div > input {
+    grid-column: 2/ 3;
+}

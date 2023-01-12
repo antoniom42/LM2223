@@ -1,0 +1,18 @@
+.contenedor {
+    background-color: white;
+    display: grid;
+    width: 70%;
+    margin: 0 auto;
+}
+.izq {
+    background-color: green;
+    grid-column: izq;
+}
+.cent {
+    background-color: white;
+    grid-column: cent;
+}
+.der {
+    background-color: white;
+    grid-column: der;
+}
