@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases</title>
+</head>
+<body>
+    <h2>Pulsa el botón para ver las frases del día:</h2>
+    <button onclick="aparecer()">PULSE</button>
+
+
+    <script>
+        var frases=['Hola que pasa', 'Como estas', 'Que tal el dia', 'Bien gracias', 'Y tu que tal estas', 'Hasta luego artista']
+
+        function aparecer() {
+        for (var i=0;i<10;i=i+1) {
+            document.write("<hr>")
+            document.write(frases[i])
+        }
+    }
+    </script>
+</body>
+</html>

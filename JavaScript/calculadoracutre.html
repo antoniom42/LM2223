@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculette</title>
+</head>
+<body>
+    <input type="text" id="numuno"><input type="text" id="numdos">
+    <button onclick="suma()">+</button>
+    <button onclick="resta()">-</button>
+    <button onclick="multiplica()">*</button>
+    <button onclick="divide()">/</button>
+
+    <script>
+        var numerouno = document.getElementById('numuno').value
+        var numerodos = document.getElementById('numdos').value
+        function suma() {
+            var sum = (numerouno + numerodos)
+            alert('El resultado es ' + sum)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideShow</title>
+</head>
+<body>
+    <table border="0" cellpadding="0">
+        <h1>IES Isbilya</h1>
+     <tr>
+       <td width="100%"><img src="s1.jpg" id="fotoActual"></td>
+     </tr>
+     <tr>
+       <td width="100%">
+       <form>
+         <div align="center">
+             
+             
+             <input type="button" value="Atrás" onClick="atras()">
+             <input type="button" value="Siguiente" onClick="siguiente()">
+             <br>
+         
+           </div>
+       </form>
+       </td>
+     </tr>
+   </table> 
+   <script>
+
+    let i=0;
+    let fotos = ["s0.jpg", "s1.jpg", "s2.jpg", "s3.jpg", "s4.jpg"]
+    
+    function siguiente() {
+        i+=1;
+        if (i>=fotos.length) {
+            i=0;
+            fotoActual.setAttribute('src', fotos[i]);
+        }
+        else {
+            fotoActual.setAttribute('src', fotos[i]);
+        }
+    }
+
+    function atras() {
+        i-=1
+        if (i<0) {
+            i=(fotos.length-1);
+            fotoActual.setAttribute('src', fotos[i]);
+        }
+        else {
+            fotoActual.setAttribute('src', fotos[i]);
+        }
+    }
+   </script>
+</body>
+</html>

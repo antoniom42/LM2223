@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <style>
+        div {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 3px;
+            margin: 3px;
+        }
+        img {
+            width: 32px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="mensaje" placeholder="¿Qué estás pensando?"><button onclick="subir()">Publicar</button>
+    <p>Pulsa aquí para ordenar los tweets</p><button onclick="orden()">Ordenar</button>
+    <p id="demo"></p>
+    <script>
+        var twit=[" Hola mi gente ", " Como estamos ", " Espero que bien "];
+        imprimir();
+
+    function imprimir() {
+        var cadena = "";
+        for (var i=twit.length-1;i>=0;i=i-1) {
+            cadena+="<div>";
+            cadena+="<img src='/EtiquetasSimples/images/104461_twitter_icon.png'>";
+            cadena+=twit[i];
+            cadena+="<img src='/EtiquetasSimples/images/2931151_close_delete_exit_remove_x_icon.png'>";
+            cadena+="</div>";
+        }
+        document.getElementById("demo").innerHTML = cadena;
+    }
+    function subir() {
+        twit.push(document.getElementById('mensaje').value);
+        imprimir();
+    }
+    function borrar() {
+
+    }
+    </script>
+</body>
+</html>
