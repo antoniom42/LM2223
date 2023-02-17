@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALIDATION</title>
+</head>
+<body>
+    <h1>REGISTRO WEB</h1>
+    <input type="text" id="nombre" placeholder="Nombre"><p id="vnombre"></p>
+    <input type="text" id="apellido" placeholder="Apellido"><p id="vapellido"></p>
+    <input type="text" id="mail" placeholder="Email"><p id="vmail"></p>
+    <input type="text" id="direccion" placeholder="Dirección"><p id="vdireccion"></p>
+    <input type="text" id="ciudad" placeholder="Ciudad"><p id="vciudad"></p>
+    <input type="text" id="telefono" placeholder="Teléfono"><p id="vtelefono"></p>
+    <input type="text" id="dni" placeholder="DNI"><p id="vdni"></p>
+    <input type="text" id="pin" placeholder="PIN"><p id="vpin"></p>
+    <input type="text" id="pinr" placeholder="PIN repetido"><p id="vpinr"></p>
+    <button onclick="validar()">Enviar</button>
+
+    <script>
+        function validar() {
+            var nombre = document.getElementById("nombre").value;
+            if (nombre != "*")
+            alert("no va")
+        }
+    </script>
+</body>
+</html>
