@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿PAR?</title>
+</head>
+<body>
+    <h1>COMPROBADOR PAR O IMPAR</h1>
+    <input type="text" id="numero"><button onclick="comprobar()">COMPRUEBA</button>
+
+<script>
+    function comprobar() {
+        var number = document.getElementById("numero").value;
+
+        if (parseInt(number) % 2 != 0) {   
+            alert("Su numero es impar");
+        }
+        else {
+            alert("Su numero es par");
+        }
+    }
+</script>
+</body>
+</html>
