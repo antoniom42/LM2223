@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VALIDATION</title>
+    <title>VALIDATION CUESTIONARIO</title>
 </head>
 <body>
     <h1>REGISTRO WEB</h1>
@@ -16,14 +16,22 @@
     <input type="text" id="telefono" placeholder="Teléfono"><p id="vtelefono"></p>
     <input type="text" id="dni" placeholder="DNI"><p id="vdni"></p>
     <input type="text" id="pin" placeholder="PIN"><p id="vpin"></p>
-    <input type="text" id="pinr" placeholder="PIN repetido"><p id="vpinr"></p>
+    <input type="text" id="pinr" placeholder="PIN Repetido"><p id="vpinr"></p>
     <button onclick="validar()">Enviar</button>
 
     <script>
         function validar() {
+
             var nombre = document.getElementById("nombre").value;
-            if (nombre != "*")
-            alert("no va")
+            var apellido = document.getElementById("apellido").value;
+            var mail = document.getElementById("mail").value;
+
+            if (nombre == "") {
+            document.getElementById("vnombre").innerHTML="Campo obligatirio";}
+            else if (apellido == "") {
+            document.getElementById("vapellido").innerHTML="Campo obligatirio";}
+            else if (mail == "") {
+            document.getElementById("vmail").innerHTML="Campo obligatirio";}    
         }
     </script>
 </body>
