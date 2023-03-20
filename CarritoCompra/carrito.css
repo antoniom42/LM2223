@@ -1,0 +1,45 @@
+body {
+    background: url(fondo.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#container {
+    background-color: white;
+    border-radius: 18px;
+    width: 900px;
+    height: 600px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-areas:
+    'teclado raton'
+    'monitor pen';
+}
+
+.teclado {
+    grid-area: teclado;
+    width: 100px;
+    height: 100px;
+}
+.raton {
+    grid-area: raton;
+    width: 100px;
+    height: 100px;
+}
+.monitor {
+    grid-area: monitor;
+    width: 100px;
+    height: 100px;
+}
+.pen {
+   /* grid-area: pen;*/
+    width: 100px;
+    height: 100px;
+}
+div > img {
+    width: 250px;
+}
