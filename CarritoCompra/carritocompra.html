@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC MANIA</title>
+    <link rel="stylesheet" href="carrito.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+<script src="carrito.js"></script>
+    <header>
+        <button id="carrito" onclick="carrito()"><img src="carrito-de-compras.png" alt=""></button>
+        <p class="titu">PC MANIA</p>
+    </header>
+
+    <!--<div id="menucarrito"></div>-->
+
+    <div id="container">
+        <div class="producto">
+            <img src="teclado.png" alt="teclado">
+            <p>MKMINI</p>
+            <p class="precios">34'90€</p>
+            <div class="cantidad"><img class="botones" src="menos.png" onclick="restar('count1')"><p id="count1">0</p><img class="botones" src="mas.png" onclick="sumar('count1')"></div>
+        </div>
+
+        <div class="producto">
+            <img src="raton.png" alt="raton">
+            <p>Asus ROG Pugio II 16000 DPI</p>
+            <p class="precios">109'89€</p>
+            <div class="cantidad"><img class="botones" src="menos.png" onclick="restar('count2')"><p id="count2">0</p><img class="botones" src="mas.png" onclick="sumar('count2')"></div>
+        </div>
+
+        <div class="producto">
+            <img src="monitor.png" alt="monitor">
+            <p>OZONE Monitor gaming DSP24240 24" UHD</p>
+            <p class="precios">228'60€</p>
+            <div class="cantidad"><img class="botones"src="menos.png" onclick="restar('count3')"><p id="count3">0</p><img class="botones" src="mas.png" onclick="sumar('count3')"></div>
+        </div> 
+
+        <div class="producto">
+            <img src="discoduro.png" alt="disco">
+            <p>Kingston A400 SSD 480GB</p>
+            <p class="precios">28'99€</p>
+            <div class="cantidad"><img class="botones" src="menos.png" onclick="restar('count4')"><p id="count4">0</p><img class="botones" src="mas.png" onclick="sumar('count4')"></div>
+        </div>
+
+        <div class="producto">
+            <img src="iphone.png" alt="iphone">
+            <p>Iphone 14 Pro Max</p>
+            <p class="precios">1289'00€</p>
+            <div class="cantidad"><img class="botones" src="menos.png" onclick="restar('count5')"><p id="count5">0</p><img class="botones" src="mas.png" onclick="sumar('count5')"></div>
+        </div>
+
+        <div class="producto">
+            <img src="altavoz.png" alt="speaker">
+            <p>Altavoz Bluetooth JBL Flip 5 Black 20W RMS</p>
+            <p class="precios">119'99€</p>
+            <div class="cantidad"><img class="botones" src="menos.png" onclick="restar('count6')"><p id="count6">0</p><img class="botones" src="mas.png" onclick="sumar('count6')"></div>
+        </div>
+
+    </div>
+</body>
+</html>
