@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: url(fondo.jpg); 
+    background-size: cover;
+    background-repeat:repeat;
+    display: flex;
+    height: 120%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header{
+    background: url(header.jpg);
+    height: 10%;
+    width: 100%;
+    background-size: cover;
+    background-repeat:repeat;
+    position:absolute;
+    top: 0%;
+    margin-bottom: 15%;
+    
+}
+.titu {
+    font-size: 220%;
+    color: rgb(0, 0, 0);
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    margin-left:42.5% ;
+    align-items: center;
+}
+    
+#carrito {
+    float: left;
+    cursor: pointer;
+    width: 6%;
+}
+button>img {
+    width: 62px;
+}
+
+#container {
+    background-color: white;
+    border-radius: 18px;
+    width: 1200px;
+    height: auto;
+    display: flex;
+    margin-top: 10%;
+    box-shadow: 5px 5px 60px;
+    justify-content: start;
+    flex-direction: column;
+}
+
+#container>.apart{
+    width:100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    margin-bottom: 3%;
+}
+
+h1{
+    margin: 3%;
+}
+#cvv{
+    margin-bottom: 20%;
+}
+#tarjetas{
+    display: flex;
+    justify-content: center;
+}
+.pagar {
+    background: #d71515;
+    background: linear-gradient(#d71515, #37393c);
+    border-radius: 13px;
+    box-shadow: 4px 4px #601313;
+    padding: 20px 33px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal bold 27px/1 "Calibri", sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+#vnombre, #vapellido, #vmail, #vtelef, #vmunicipio, #vcp, #vdireccion, #vtarj, #vnumtarj, #vcaducidad, #vcvv {
+    color: #d71515;
+}
