@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <script src="JQuery1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#e').click(function(){
+                $('p').css({"font-size":"+=2", "color":"red"});
+            });
+            $('#m').click(function(){
+                $('p').css({"font-size":"-=2", "color":"green"});
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Cuarto uso JQuery</h1>
+    <p>Parrafillo 1</p>
+    <p>Parrafanco 2</p>
+    <p>Parrafete 3</p>
+    <p>Parrafazo 4</p>
+    <p>Parrafucho 5</p>
+    <button id="e">+</button>
+    <button id="m">-</button>
+</body>
+</html>
