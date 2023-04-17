@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage ;)</title>
+</head><body>
+    <h1>SESSION STORAGE CON JAVA SCRIPT</h1>
+    <input type="text" id="color" placeholder="Color"><input type="text" id="nombre" placeholder="Nombre">
+    <button onclick="guarda()">GUARDA</button><button onclick="muestra()">MUESTRA</button>
+    <p id="demo"></p>
+<script>
+    function guarda() {
+        sessionStorage.setItem("color", document.getElementById("color").value);
+        sessionStorage.setItem("nombre", document.getElementById("nombre").value);
+    }
+    function muestra() {
+        document.getElementById("demo").innerHTML = sessionStorage.getItem("color") + " y " + localStorage.getItem("nombre");
+    }
+</script>
+</body>
+</html>
